@@ -1,61 +1,56 @@
+@font-face {
+    font-family: fuente-index;
+    src: url(../fuentes/Unispace\ Bd.otf);
+}
+
 body {
     margin: 0;
+    background-color: #48D1CC;
 }
 
-body {
-    font-family: "Open Sans", sans-serif;
-}
 
 header {
-    /* border: 1px solid magenta; */
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: 10%;
 }
+
 
 header nav {
     background-color: #48D1CC;
     width: 100%;
     height: auto;
+    font-family: fuente-index;
 
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 header nav ul {
-   /* border: 1px solid blue; */ 
-   width: 80%;
+   width: 100%;
    height: auto;
 
    list-style: none;
    padding: 0;
 
    display: flex;
-   /* flex-wrap: nowrap; */
-
-   /* justify-content: space-evenly; */
-
-   /* flex-direction: row; */
-   /* flex-direction: column; */
-   /* flex-direction: row-reverse;
-   flex-direction: column-reverse; */
 }
 
 header nav ul li {
-    /* border: 1px solid yellow; */
     width: 100%;
     height: auto;
 }
 
 header nav ul li a {
     text-decoration: none;
-    /* border: 1px solid white; */
-
+    text-transform: uppercase;
+    box-shadow: 6px 6px 5px #248f86;
+    border-radius: 5%;
     width: 115px;
     height: 54px;
-    display: block;
+    display: flex;
+    justify-content: center;
 
-    background-color: #800080;
     color: white;
     margin: auto;
 
@@ -63,49 +58,85 @@ header nav ul li a {
     line-height: 54px;
 }
 
+header nav ul li a:hover{
+    font-size: 15px;
+    transform: scaleX(1.2);
+    transition-duration: 0.5s;
+}
+
 /* ----------------------------------- */
 header > div {
-    background-color: #555;
+    background-color: #48D1CC;
     width: 100%;
-    /* height: 180px; */
-    /* border: 1px solid yellow; */
 
     display: flex;
 }
 
-#logo {
+
+#imagenlogo a{
     height: 54px;
-    width: 10%;
-    background-color: #FFFF00;
-    text-align: center;
-    line-height: 54px;
-    font-size: 22px;
+    width: 54px;
+    box-shadow: none;
+}
+
+#imagenlogo a img{
+    border-radius: 5%;
+}
+
+#imagenlogo:hover{
+    transform: scaleX(1.1);
+    transform: scaleY(1.2);
+    transition-duration: 0.5s;
+}
+
+#barra{
+    margin-top: 5vh;
 }
 
 #barra-busqueda {
-    height: 54px;
-    width: 85%;
-    background-color: #FFD700;
+    text-transform: uppercase;
+    height: auto;
+    width: 80%;
+    background-color: #48D1CC;
     text-align: center;
     line-height: 54px;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
+#busqueda{
+    width: 100%;
+}
+
 #boton-carrito {
-    height: 54px;
+    height: 50px;
     width: 5%;
-    background-color:#DAA250;
+    background-color:#48D1CC;
+    box-shadow: 2px 2px 5px aliceblue;
+    border-radius: 5%;
     text-align: center;
     line-height: 54px;
     font-size: 20px;
 }
 
+#boton-carrito:hover{
+    border-radius: 5%;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    
+}
+
+#logo-carrito{
+    border-radius: 5%;
+    height: 54px;
+    width: auto;
+}
+
+
 #barra-busqueda form {
-    /* border:  1px solid cyan; */
-    width: 85%;
+    width: 80%;
     height: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -114,29 +145,49 @@ header > div {
 }
 
 #barra-busqueda form label {
-    background-color: #ADFF2F;
-    width: 100px;
+    font-family: fuente-index;
+    width: 25%;
     height: 22px;
     line-height: 22px;
     text-align: center;
     margin-right: 1px;
-    /* display: inline-block; */
 }
 
 #barra-busqueda form input {
-    background-color: #FF1493;
-    width: 50%;
+    width: 40%;
     height: 20px;
     color: white;
     margin: 1px;
 }
 
 #barra-busqueda form input[type="submit"] {
-    background-color: #2f4f4f;
+    background-color: #48D1CC;
+    color: navy;
+    border: none;
+    box-shadow: 4px 4px lightblue;
+    border-radius: 5%;
     width: 100px;
     height: 28px;
 }
 
+#barra-busqueda form input[type="submit"]:hover{
+    transform: scaleX(1.1);
+    transform-origin: left;
+    transition-duration: 0.3s;
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+#barra-busqueda form input[type="text"]{
+    width: 50%;
+}
+
+#barra-busqueda form input[type="text"]:focus{
+    color: black;
+}
+#barra-busqueda form input[type="text"]:hover{
+    background-color: #48D1CC;
+}
 
 main {
     height: 550px;

@@ -1,6 +1,6 @@
 main {
     height: auto;
-    background-color:#689;
+    background-color:#48D1CC;
     text-align: center;
     padding: 25px;
 }
@@ -11,14 +11,10 @@ section img {
 }
 
 main .section-cards-body {
-    /* border: 1px dashed cyan; */
-
     display: flex;
-    /* flex-wrap: nowrap; */
     flex-wrap: wrap;
 
     justify-content: space-evenly;
-    /* align-items: center; */
 }
 
 section {
@@ -32,17 +28,18 @@ section {
 }
 
 section h3 {
+    font-family: fuente-index;
     font-size: 24px;
+    color: black;
     margin-bottom: 20px;
-    text-decoration: underline;
 }
 
 .section-cards-header h1 {
     color: white;
+    font-family: fuente-index;
     margin-bottom: 40px;
 }
 
 section p {
-    /* text-align: left; */
     margin-bottom: 10px;
 }
