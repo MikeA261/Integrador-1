@@ -1,6 +1,5 @@
 main {
     height: auto;
-    background-color:#48D1CC;
     text-align: center;
     padding: 25px;
 }
@@ -17,7 +16,7 @@ main .section-cards-body {
     justify-content: space-evenly;
 }
 
-section {
+main section {
     border: 1px dashed yellow;
     width: 250px;
     padding: 15px;
@@ -27,7 +26,7 @@ section {
     border-radius: 15px;
 }
 
-section h3 {
+main section h3 {
     font-family: fuente-index;
     font-size: 24px;
     color: black;

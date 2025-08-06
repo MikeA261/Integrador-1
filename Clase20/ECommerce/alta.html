@@ -11,7 +11,8 @@
     
     <header>
         <nav>
-            <ul>
+            <ul> 
+                <li id="imagenlogo"><a href=""><img src="imgs/shopping-bag-logo-icon-design-template-isolated-vector.jpg" alt=""></a></li>
                 <li> <a href="./index.html">Inicio</a> </li>
                 <li> <a href="./alta.html">Alta</a> </li>
                 <li> <a href="./carrito.html">Carrito</a> </li>
@@ -20,17 +21,38 @@
                 <li> <a href="./otra.html">Otra</a> </li>
             </ul>
         </nav>
-        <div>
-            <div id="logo">Logo</div>
+        <div id="barra">
             <div id="barra-busqueda">
-                <form action="#">
-                    <label for="buscar">Buscar</label>
-                    <input type="text">
+                <form id="busqueda" action="#">
+                    <label for="buscar">¿Que necesitas?</label>
+                    <input type="text" placeholder="Busca productos, marcas y mas...">
                     <input type="submit" value="Buscar">
                 </form>
             </div>
-            <div id="boton-carrito">C</div>
+            <div id="boton-carrito">
+                <a href="">
+                    <img id="logo-carrito" src="imgs/carrito-logo.jpg" alt="">
+                    <div></div>
+                </a>
+            </div>
         </div>
+        <section id="slider">
+            <div class="cajabanner" >
+                <div class="banner activar">
+                    <img src="imgs/Banner1.jpg" alt="banner1">
+                </div>
+                <div class="banner">
+                    <img src="imgs/Banner2.png" alt="banner2">
+                </div>
+                <div class="banner">
+                    <img src="imgs/banner3.webp" alt="banner3">
+                </div>
+            </div>
+        </section>
+        <nav id="botonesbanner">
+            <button class="botonbanner prev" onclick="preSlide()">prev</button>
+            <button class="botonbanner next" onclick="nextSlide()">next</button>
+        </nav>
     </header>
 
     <main>
