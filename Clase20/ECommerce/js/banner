@@ -1,25 +1,29 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.banner');
-const totalSlides = slides.length;
+let imagenAcutal = 0;
+const imagen = document.querySelectorAll('.banner');
+const totalImagenes = imagen.length;
+const slideInterval = 5000;
 
 
 
 
-function showSlide(index){
-    slides.forEach((slide, i) => {
-        slide.classList.remove('activar');
+function cambiarImagen(index){
+    imagen.forEach((imagen, i) => {
+        imagen.classList.remove('activar');
         if (i === index) {
-            slide.classList.add('activar');
+            imagen.classList.add('activar');
         }
     });
 }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
+function nextSlide(){
+    imagenAcutal = (imagenAcutal + 1) % totalImagenes;
+    cambiarImagen(imagenAcutal);
 }
 
 function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    showSlide(currentSlide);
+    imagenAcutal = (imagenAcutal - 1 + totalImagenes) % totalImagenes;
+    cambiarImagen(imagenAcutal);
 }
+
+setInterval(nextSlide, slideInterval);
+showSlide(imagenAcutal);

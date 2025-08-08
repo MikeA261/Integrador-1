@@ -1,44 +1,101 @@
+
 main {
     height: auto;
-    text-align: center;
-    padding: 25px;
 }
 
-section img {
-    width: 100px;
-    margin-bottom: 15px;
-}
-
-main .section-cards-body {
+.section-cards-header{
     display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-evenly;
-}
-
-main section {
-    border: 1px dashed yellow;
-    width: 250px;
-    padding: 15px;
-    background-color:#943;
-    color: white;
-    margin: 15px;
-    border-radius: 15px;
-}
-
-main section h3 {
-    font-family: fuente-index;
-    font-size: 24px;
-    color: black;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-cards-header h1 {
-    color: white;
+    color: black;
     font-family: fuente-index;
-    margin-bottom: 40px;
 }
 
-section p {
-    margin-bottom: 10px;
+.section-cards{
+    margin-left: 2%;
+}
+
+main .section-cards .contenedor-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+main .card-container .card{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .card-container .card .descripcion{
+    padding: 2px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main .card-container .card .envio{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+main .card img {
+    width: 100px;
+    height: 100px;
+}
+
+main .card-container .card p{
+    padding: 2px;
+}
+
+.card-container a{
+    text-decoration: none;
+}
+
+
+.card-container a .card{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 60%;
+    margin: 15px;
+    padding: 5%;
+}
+
+.card-container .card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+main .card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+}
+
+main .card{
+    background-color:orange;
+    color: black;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1340px) {
+    main .section-cards .contenedor-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+}
+
+@media screen and (max-width: 900px) {
+    main .section-cards .contenedor-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+}
 }

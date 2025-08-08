@@ -24,21 +24,38 @@
         <div id="barra">
             <div id="barra-busqueda">
                 <form id="busqueda" action="#">
-                    <label for="buscar">¿Que necesitas?</label>
+                    <label for="buscar"><img src="imgs/buscarLogo.png" alt=""></label>
                     <input type="text" placeholder="Busca productos, marcas y mas...">
                     <input type="submit" value="Buscar">
                 </form>
             </div>
             <div id="boton-carrito">
                 <a href="">
-                    <img id="logo-carrito" src="imgs/carrito-logo.jpg" alt="">
+                    <img id="logo-carrito" src="imgs/carrito-de-compras.png" alt="">
                     <div></div>
                 </a>
             </div>
         </div>
-        <div id="slider">
-            <img src="imgs/Banner1.jpg" alt="">
-        </div>
+        <section id="slider">
+            <div class="cajabanner" >
+                <div class="banner activar">
+                    <img src="imgs/Banner1.jpg" alt="banner1">
+                </div>
+                <div class="banner activar">
+                    <img src="imgs/Banner2.png" alt="banner2">
+                </div>
+                <div class="banner activar">
+                    <img src="imgs/banner3.webp" alt="banner3">
+                </div>
+                <div class="banner activar">
+                    <img src="imgs/banner4.webp" alt="banner4">
+                </div>
+            </div>
+        </section>
+        <nav id="botonesbanner">
+            <button class="botonbanner prev" onclick="prevSlide()"><img src="imgs/flechabanner-izq.png" alt="flecha izquierda"></button>
+            <button class="botonbanner next" onclick="nextSlide()"><img src="imgs/flechabanner-der.png" alt="flecha derecha"></button>
+        </nav>
     </header>
 
     <main>

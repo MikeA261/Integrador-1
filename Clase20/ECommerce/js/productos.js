@@ -48,5 +48,65 @@ var productos = [
     detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
     foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
     envio: true
+  },
+  {
+    nombre: "Robot Aspirador CleanBot V5",
+    precio: 239.99,
+    stock: 18,
+    marca: "CleanTech",
+    categoria: "Electrodomésticos",
+    detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
+    foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
+    envio: true
+  },
+  {
+    nombre: "Robot Aspirador CleanBot V5",
+    precio: 239.99,
+    stock: 18,
+    marca: "CleanTech",
+    categoria: "Electrodomésticos",
+    detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
+    foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
+    envio: true
+  },
+  {
+    nombre: "Robot Aspirador CleanBot V5",
+    precio: 239.99,
+    stock: 18,
+    marca: "CleanTech",
+    categoria: "Electrodomésticos",
+    detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
+    foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
+    envio: true
+  },
+  {
+    nombre: "Robot Aspirador CleanBot V5",
+    precio: 239.99,
+    stock: 18,
+    marca: "CleanTech",
+    categoria: "Electrodomésticos",
+    detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
+    foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
+    envio: true
+  },
+  {
+    nombre: "Robot Aspirador CleanBot V5",
+    precio: 239.99,
+    stock: 18,
+    marca: "CleanTech",
+    categoria: "Electrodomésticos",
+    detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
+    foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
+    envio: true
+  },
+  {
+    nombre: "Robot Aspirador CleanBot V5",
+    precio: 239.99,
+    stock: 18,
+    marca: "CleanTech",
+    categoria: "Electrodomésticos",
+    detalles: "Mapeo láser, control por app, autonomía de 120 min, compatible con Alexa y Google Home.",
+    foto: "https://http2.mlstatic.com/D_619670-MLA80556633836_112024-C.jpg",
+    envio: true
   }
 ];
