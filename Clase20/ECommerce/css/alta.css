@@ -1,0 +1,79 @@
+
+.alta-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alta-form form{
+    width: 70%;
+    font-family: fuente-index;
+}
+
+.input-group{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group label{
+    width: 20%;
+    height: 30px;
+    margin: 0 5px 0 0;
+    text-transform: uppercase;
+    background-color: var(--color--sombra);
+    box-shadow: 2px 2px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-group input[type="text"]{
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.input-group input[type="text"]:focus{
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
+}
+
+
+.input-group input[type="number"]{
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+
+.input-group input[type="number"]:focus{
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+}
+.input-group #categorias{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.input-group #categorias:focus{
+    width: 60%;
+    height: 30px;
+    font-family: fuente-index;
+    font-size: 15px;
+    border-radius: 5px;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
+}

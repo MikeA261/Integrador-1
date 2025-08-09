@@ -28,6 +28,7 @@ header nav {
     font-family: fuente-index;
 
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -71,10 +72,12 @@ header nav ul li a:hover{
 }
 
 /* ----------------------------------- */
-header > div {
+header #imagenlogo {
     background-color: transparent;
     width: 100%;
     display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 
@@ -82,6 +85,8 @@ header > div {
     height: 60px;
     width: 60px;
     box-shadow: none;
+    display: flex;
+    justify-content: start;
 }
 
 #imagenlogo a img{
@@ -183,14 +188,16 @@ header > div {
 }
 
 #barra-busqueda form input[type="text"]{
-    width: 70%;
+    width: 35%;
+    transition: width 0.4s ease-in-out;
 }
 
 #barra-busqueda form input[type="text"]:focus{
     color: black;
+    width: 75%;
 }
 #barra-busqueda form input[type="text"]:hover{
-    background-color: #48D1CC;
+    background-color: peachpuff;
 }
 
 
@@ -258,11 +265,22 @@ footer {
 }
 
 
+/* Resposive section @mediaQrys */
+
 
 @media screen and (max-width: 1340px) {
 header {
     width: 100%;
     height: auto;
+}
+
+header #imagenlogo {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 
@@ -294,7 +312,7 @@ header nav ul li a {
     letter-spacing: 5px;
     text-transform: uppercase;
     border-radius: 5%;
-    width: 200px;
+    width: 250px;
     height: 54px;
     display: flex;
     justify-content: center;
@@ -379,7 +397,7 @@ header nav ul li a:hover{
 
 
     #barra-busqueda form {
-    width: 80%;
+    width: 100%;
     height: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -426,13 +444,15 @@ header nav ul li a:hover{
     }
 
     #barra-busqueda form input[type="text"]{
-    width: 70%;
+    width: 35%;
     }
 
     #barra-busqueda form input[type="text"]:focus{
     color: black;
+    width: 70%;
     }
-
+    
+    
 }
 
 
@@ -441,5 +461,53 @@ header nav ul li a:hover{
     height: auto;
     display: grid;
     grid-template-columns: auto;
+}
+#barra{
+    margin-top: 5vh;
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#barra-busqueda {
+    text-transform: uppercase;
+    height: auto;
+    width: 80%;
+    background-color: transparent;
+    text-align: center;
+    line-height: 54px;
+}
+
+#barra-busqueda form label img{
+    display: none;
+}
+
+#barra-busqueda form {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#barra-busqueda form input[type="submit"] {
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    box-shadow: 4px 4px 2px var(--color--sombra);
+    border-radius: 5%;
+    width: 80px;
+    height: 28px;
+}
+#boton-carrito {
+    display: none;
+}
+.cajabanner {
+    display: none;
+}
+
+#botonesbanner{
+    display: none;
 }
 }

@@ -1,6 +1,7 @@
 
 main {
     height: auto;
+    margin: auto;
 }
 
 .section-cards-header{
@@ -21,12 +22,13 @@ main {
 main .section-cards .contenedor-grid {
     height: auto;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 
 main .card-container .card{
-    margin: 15px;
+    margin: auto;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -84,18 +86,86 @@ main .card{
     border-radius: 15px;
 }
 
+
+@media screen and (max-width: 1620px) {
+    main {
+    height: auto;
+    margin: auto;
+    }
+    main .section-cards .contenedor-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+}
+
+
 @media screen and (max-width: 1340px) {
+    main {
+    height: auto;
+    margin: auto;
+}
+
+    main .card-container .card{
+    margin: auto;
+    height: auto;
+}
+
+    main .card-container{
+    padding: 15px;
+}
+
     main .section-cards .contenedor-grid {
     height: auto;
     display: grid;
     grid-template-columns: auto auto;
 }
+
+
+    main .section-cards .contenedor-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-@media screen and (max-width: 900px) {
+    .section-cards-header h1 {
+    color: black;
+    font-family: fuente-index;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 970px) {
+    main {
+    height: auto;
+    margin: auto;
+}
+
+main .section-cards .contenedor-grid {
+    height: auto;
+    display: flex;
+}
+
     main .section-cards .contenedor-grid {
     height: auto;
     display: grid;
     grid-template-columns: auto;
 }
+
+.section-cards-header h1 {
+    color: black;
+    font-family: fuente-index;
+    font-size: 15px;
+}
+
+main .card-container{
+    padding: 15px;
+}
+
+main .card-container .card{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 }
