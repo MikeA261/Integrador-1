@@ -1,0 +1,302 @@
+main{
+    background-image: url(../imgs/nosotrosfondo.jpg);
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+}
+
+main h1{
+    font-family: fuente-index;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main #contenedor{
+    background-color: white;
+    opacity: 0.8;
+    font-family: fuente-index;
+    letter-spacing: 2px;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+main #contenedor .nosotros{
+    padding: 0;
+}
+
+.contenedorh2{
+    font-size: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.contenedorh2 h2{
+    padding: 5px;
+}
+
+main button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 5%;
+    height: 2%;
+}
+
+main button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+main button:active{
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    width: 5%;
+    height: 2%;
+}
+
+
+main p{
+    background-image: linear-gradient(grey, white);
+    margin: 0;
+    padding: 3px;
+    color: black;
+    border-radius: 5px;
+
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 980px){
+        main{
+    background-image: url(../imgs/nosotrosfondo.jpg);
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+}
+
+main h1{
+    font-family: fuente-index;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main #contenedor{
+    background-color: white;
+    opacity: 0.8;
+    font-family: fuente-index;
+    letter-spacing: 2px;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+main #contenedor .nosotros{
+    padding: 0;
+}
+
+.contenedorh2{
+    font-size: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.contenedorh2 h2{
+    padding: 5px;
+}
+
+main button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 7%;
+    height: 2%;
+}
+
+main button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+main button:active{
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    width: 5%;
+    height: 2%;
+}
+
+
+main p{
+    background-image: linear-gradient(grey, white);
+    margin: 0;
+    padding: 3px;
+    color: black;
+    border-radius: 5px;
+
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+}
+
+
+@media screen and (max-width: 980px){
+        main{
+    background-image: url(../imgs/nosotrosfondo.jpg);
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+}
+
+main h1{
+    font-family: fuente-index;
+    font-size: 25px;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main #contenedor{
+    background-color: white;
+    opacity: 0.8;
+    font-family: fuente-index;
+    letter-spacing: 1px;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+main #contenedor .nosotros{
+    padding: 0;
+}
+
+.contenedorh2{
+    font-size: 12px;
+    display: block;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.contenedorh2 h2{
+    padding: 5px;
+    font-size: 18px;
+}
+
+main button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 9%;
+    height: 2%;
+}
+
+main button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+main button:active{
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    width: 9%;
+    height: 2%;
+}
+
+
+main p{
+    background-image: linear-gradient(grey, white);
+    margin: 0;
+    padding: 3px;
+    color: black;
+    border-radius: 5px;
+
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 480px){
+        main{
+    background-image: url(../imgs/nosotrosfondo.jpg);
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+}
+
+main h1{
+    font-family: fuente-index;
+    font-size: 20px;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.contenedorh2{
+    display: block;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.contenedorh2 h2{
+    padding: 5px;
+    font-size: 18px;
+}
+
+main button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 13%;
+    height: 2%;
+}
+
+main button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+main button:active{
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    width: 13%;
+    height: 2%;
+}
+
+
+main p{
+    background-image: linear-gradient(grey, white);
+    margin: 0;
+    padding: 3px;
+    color: black;
+    border-radius: 5px;
+
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+}

@@ -1,5 +1,18 @@
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color--sombra);
+    color: black;
+}
+
+
 
 .alta-form{
+    background-image: url(../imgs/fondoalta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +24,7 @@
 }
 
 .input-group{
-    padding: 2%;
+    padding: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,13 +44,255 @@
 
 
 .input-group input[type="text"]{
-    width: 50%;
+    width: 35%;
     height: 25px;
     border-radius: 5px;
 }
 
 .input-group input[type="text"]:focus{
-    width: 60%;
+    width: 45%;
+    height: 25px;
+    border-radius: 5px;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
+}
+
+
+.input-group input[type="number"]{
+    width: 35%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.input-group input[type="number"]:focus{
+    width: 40%;
+    transform-origin: left;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+
+}
+
+
+.input-group #categorias{
+    width: 35%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.input-group #categorias:focus{
+    width: 45%;
+    height: 30px;
+    font-family: fuente-index;
+    font-size: 15px;
+    border-radius: 5px;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
+}
+
+
+.input-group input[type="file"]{
+    width: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.input-group input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+#boton-agregar{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#boton-agregar button{
+    width: 10%;
+    padding: 10px;
+    background-color: var(--color--primario);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#boton-agregar button:hover{
+    cursor: pointer;
+}
+
+#boton-agregar button:active{
+    background: green;
+    color: white;
+}
+
+
+main #headertitle {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--sombra);
+}
+
+main #headertitle h1{
+    height: 35px;
+    font-family: fuente-index;
+}
+
+main #headertitle img{
+    height: 40px;
+}
+
+
+/* Table section */
+tr{
+    border: 1px dashed black;
+}
+
+th,td {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: orange;
+}
+
+table {
+    background-color: var(--color--primario);
+    border-collapse: collapse;
+    margin: 3% auto;
+    text-transform: uppercase;
+}
+
+th {
+    background-color: #111;
+    color: white;
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}
+
+main #tabletitle{
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: fuente-index;
+    background-color: var(--color--sombra);
+}
+
+
+@media screen and (max-width: 1340px){
+    .input-group{
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+    .alta-form{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+}
+    
+    .alta-form form{
+    width: 100%;
+    font-family: fuente-index;
+}
+    .input-group input[type="text"]{
+        width: 45%;
+        height: 25px;
+        border-radius: 5px;
+}
+
+.input-group input[type="file"]{
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-group input[type="text"]:focus{
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
+}
+
+
+.input-group input[type="number"]{
+    width: 45%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.input-group input[type="number"]:focus{
+    width: 50%;
+    transform-origin: left;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+
+}
+
+.input-group #categorias{
+    width: 45%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.input-group #categorias:focus{
+    width: 50%;
+    height: 30px;
+    font-family: fuente-index;
+    font-size: 15px;
+    border-radius: 5px;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
+}
+}
+
+@media screen and (max-width: 980px){
+    .input-group{
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+    .alta-form{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+}
+    
+    .alta-form form{
+    width: 100%;
+    font-family: fuente-index;
+}
+    .input-group input[type="text"]{
+        width: 50%;
+        height: 25px;
+        border-radius: 5px;
+}
+
+.input-group input[type="file"]{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-group input[type="text"]:focus{
+    width: 55%;
     height: 25px;
     border-radius: 5px;
     transform: scaleX(1.2);
@@ -52,17 +307,109 @@
     border-radius: 5px;
 }
 
-
 .input-group input[type="number"]:focus{
+    width: 55%;
+    transform-origin: left;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+
+}
+
+.input-group #categorias{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.input-group #categorias:focus{
+    width: 55%;
+    height: 30px;
+    font-family: fuente-index;
+    font-size: 15px;
+    border-radius: 5px;
     transform: scaleX(1.2);
     transition-duration: 0.3s;
     transform-origin: left;
+}
+    main #tabletitle h2{
+        font-size: 23px;
+}
+
+    main #headertitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--sombra);
+}
+
+    main #headertitle h1{
+    height: 35px;
+    font-size: 23px;
+    font-family: fuente-index;
+}
+
+    main #headertitle img{
+    height: 40px;
+}
+
+}
+
+
+@media screen and (max-width: 650px){
+    .input-group{
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+    .alta-form{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+}
+    
+    .alta-form form{
+    width: 100%;
+    font-family: fuente-index;
+}
+    .input-group input[type="text"]{
+        width: 55%;
+        height: 25px;
+        border-radius: 5px;
+}
+
+.input-group input[type="file"]{
+    width: 55%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-group input[type="text"]:focus{
     width: 60%;
     height: 25px;
     border-radius: 5px;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+    transform-origin: left;
 }
+
+
+.input-group input[type="number"]{
+    width: 55%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.input-group input[type="number"]:focus{
+    width: 60%;
+    transform-origin: left;
+    transform: scaleX(1.2);
+    transition-duration: 0.3s;
+
+}
+
 .input-group #categorias{
-    width: 50%;
+    width: 55%;
     height: 30px;
     border-radius: 5px;
 }
@@ -76,4 +423,27 @@
     transform: scaleX(1.2);
     transition-duration: 0.3s;
     transform-origin: left;
+}
+
+    main #tabletitle h2{
+        font-size: 20px;
+}
+
+    main #headertitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--sombra);
+}
+
+    main #headertitle h1{
+    height: 30px;
+    font-size: 20px;
+    font-family: fuente-index;
+}
+
+    main #headertitle img{
+    height: 35px;
+}
+
 }

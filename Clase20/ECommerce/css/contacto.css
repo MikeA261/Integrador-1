@@ -1,0 +1,133 @@
+main{
+    margin: auto;
+    height: auto;
+}
+
+main h1{
+    margin: 0 0 2% 0;
+    height: auto;
+    font-family: fuente-index;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario{
+    height: 500px;
+    background-image: url(../imgs/formularioimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#formulario form{
+    background-image: linear-gradient(black,cornflowerblue,peachpuff );
+    width: 50%;
+    height: 400px;
+    border-radius: 5px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario form div{
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario form div label{
+    width: 25%;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+
+    font-family: fuente-index;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario form input[type='text']{
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+}
+
+#formulario form input[type='email']{
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+}
+
+#formulario form textarea{
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    resize: none;
+}
+
+
+
+@media screen and (max-width: 980px){
+    #formulario form{
+    background-image: linear-gradient(black,cornflowerblue,peachpuff );
+    width: 60%;
+    height: 400px;
+    border-radius: 5px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+    #formulario form div label{
+    width: 30%;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+
+    font-family: fuente-index;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+
+@media screen and (max-width: 620px){
+    #formulario form{
+    background-image: linear-gradient(black,cornflowerblue,peachpuff );
+    width: 80%;
+    height: 400px;
+    border-radius: 5px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+    #formulario form div label{
+    width: 30%;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+
+    font-family: fuente-index;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}

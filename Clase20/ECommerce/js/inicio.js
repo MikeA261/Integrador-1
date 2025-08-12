@@ -23,7 +23,8 @@ function representarCardsProductos() {
                                     <div><p><b>Categoría:</b> ${producto.categoria}</p></div>
                                     <div class="descripcion"><p><b>Detalles:</b> ${producto.detalles}</p></div>
                                     <br>
-                                    <div class= "envio"><p><b style="color:gold;">Envío:</b> ${producto.envio? 'Si':'No'}</p>
+                                    <div class= "envio"><p><b style="color:gold;">Envío:</b> ${producto.envio? 'Si':'No'}</p></div>
+                                    <button>Comprar</button>
                                 </section>
                             </a>
                         </div>`

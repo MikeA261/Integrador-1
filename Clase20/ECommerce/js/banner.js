@@ -1,7 +1,7 @@
 let imagenAcutal = 0;
 const imagen = document.querySelectorAll('.banner');
-const totalImagenes = imagen.length;
-const slideInterval = 5000;
+const imagenes = imagen.length;
+const duracionSlide = 5000;
 
 
 
@@ -16,14 +16,13 @@ function cambiarImagen(index){
 }
 
 function nextSlide(){
-    imagenAcutal = (imagenAcutal + 1) % totalImagenes;
+    imagenAcutal = (imagenAcutal + 1) % imagenes;
     cambiarImagen(imagenAcutal);
 }
 
 function prevSlide() {
-    imagenAcutal = (imagenAcutal - 1 + totalImagenes) % totalImagenes;
+    imagenAcutal = (imagenAcutal - 1 + imagenes) % imagenes;
     cambiarImagen(imagenAcutal);
 }
 
-setInterval(nextSlide, slideInterval);
-showSlide(imagenAcutal);
+setInterval(nextSlide, duracionSlide);

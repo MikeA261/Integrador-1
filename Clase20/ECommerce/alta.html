@@ -8,29 +8,27 @@
     <link rel="stylesheet" href="css/alta.css">
 </head>
 <body>
-    
-    <header>
-        <nav>
+<header>
+        <div id="imagenlogo"><a href="./index.html"><img src="imgs/shopping-bag-logo-icon-design-template-isolated-vector.jpg" alt=""></a></div>
+        <nav id="headernav">
             <ul> 
-                <li id="imagenlogo"><a href=""><img src="imgs/shopping-bag-logo-icon-design-template-isolated-vector.jpg" alt=""></a></li>
                 <li> <a href="./index.html">Inicio</a> </li>
                 <li> <a href="./alta.html">Alta</a> </li>
                 <li> <a href="./carrito.html">Carrito</a> </li>
                 <li> <a href="./contacto.html">Contacto</a> </li>
                 <li> <a href="./nosotros.html">Nosotros</a> </li>
-                <li> <a href="./otra.html">Otra</a> </li>
             </ul>
         </nav>
         <div id="barra">
             <div id="barra-busqueda">
                 <form id="busqueda" action="#">
                     <label for="buscar"><img src="imgs/buscarLogo.png" alt=""></label>
-                    <input type="text" placeholder="Busca productos, marcas y mas...">
+                    <input type="text" id="buscar" placeholder="Busca productos, marcas y mas..." name="buscar">
                     <input type="submit" value="Buscar">
                 </form>
             </div>
             <div id="boton-carrito">
-                <a href="">
+                <a href="./carrito.html">
                     <img id="logo-carrito" src="imgs/carrito-de-compras.png" alt="">
                     <div></div>
                 </a>
@@ -59,65 +57,68 @@
     </header>
 
     <main>
-        <h1>Alta de Productos</h1>
+        <div id="headertitle">
+            <h1>Alta de Productos</h1>
+            <img src="imgs/agregarlogo.png" alt="">
+        </div>
         <div class="alta-form">
-            <form onsubmit="agregar(event)">
+            <form action="https://postman-echo.com/post" method="post" id="alta-form" onsubmit="agregar(event)">
                 <!-- campo nombre -->
                 <div class="input-group">
                     <label for="nombre">nombre</label>
-                    <input id="nombre" type="text" name="nombre">
+                    <input id="nombre" type="text" name="nombre"  required>
                     <div class="error-detail"></div>
                 </div>
 
                 <!-- campo precio -->
                 <div class="input-group">
                     <label for="precio">precio</label>
-                    <input id="precio" type="number" name="precio">
+                    <input id="precio" type="number" name="precio"  required>
                     <div class="error-detail"></div>
                 </div>
 
                 <!-- campo stock -->
                 <div class="input-group">
                     <label for="stock">stock</label>
-                    <input id="stock" type="number" name="stock">
+                    <input id="stock" type="number" name="stock"  required>
                     <div class="error-detail"></div>
                 </div>
 
                 <!-- campo marca -->
                 <div class="input-group">
                     <label for="marca">marca</label>
-                    <input id="marca" type="text" name="marca">
+                    <input id="marca" type="text" name="marca"  required>
                     <div class="error-detail"></div>
                 </div>
 
                 <!-- campo categoria -->
                 <div class="input-group">
                     <label for="categoria">categoría</label>
-                    <select id="categorias" name="country">
-                        <option value="australia">Vehiculos</option>
-                        <option value="canada">Tecnologia</option>
-                        <option value="usa">Inmuebles</option>
-                        <option value="usa">Herramientas</option>
-                        <option value="usa">Electrodomésticos</option>
-                        <option value="usa">Deportes y Fitness</option>
-                        <option value="usa">Juegos y Juguetes</option>
-                        <option value="usa">Moda</option>
-                        <option value="usa">Mascotas</option>
-                        <option value="usa">Accesorios para vehiculos</option>
+                    <select id="categorias" onchange="cambiarCategoria()" name="country"  required>
+                        <option value="0">Seleccione una categoria...</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="inmuebles">Inmuebles</option>
+                        <option value="herramientas">Herramientas</option>
+                        <option value="electrodomésticos">Electrodomésticos</option>
+                        <option value="deportes-fitness">Deportes y Fitness</option>
+                        <option value="juegos-juguetes">Juegos y Juguetes</option>
+                        <option value="moda">Moda</option>
+                        <option value="mascotas">Mascotas</option>
+                        <option value="Accesorios-auto">Accesorios para vehiculos</option>
                     </select>
                 </div>
 
                 <!-- campo detalles -->
                 <div class="input-group">
                     <label for="detalles">detalles</label>
-                    <input id="detalles" type="text" name="detalles">
+                    <input id="detalles" type="text" name="detalles"  required>
                     <div class="error-detail"></div>
                 </div>
 
                 <!-- campo foto -->
                 <div class="input-group">
                     <label for="foto">foto</label>
-                    <input id="foto" type="text" name="foto">
+                    <input id="foto" type="file" name="foto"  required>
                     <div class="error-detail"></div>
                 </div>
 
@@ -126,31 +127,40 @@
                     <input id="envio" type="checkbox" name="envio">
                     <label for="envio">envío</label>
                 </div>
-
                 <!-- botón de envío -->
-                <!-- <button onclick="agregar(event)">Agregar</button> -->
-                <button>Agregar</button>
+                 <div id="boton-agregar">
+                    <button onclick="agregar(event), cambiarCategoria()">Agregar</button>
+                 </div>
             </form>
         </div>
-
-
-
-        <hr>
-
         <!-- ------------------------------------------------------------ -->
-        <h2>Lista de productos disponibles</h2>
-
-        <table></table>
-
-        
-
+        <div id="tabletitle">
+            <h2>Lista de productos disponibles</h2>
+         </div>
+        <div style="overflow: auto;">
+            <table>
+            
+            </table>
+        </div>
     </main>
-
+    <hr>
     <footer>
-        <h3>Copyright 2025</h3>
+        <div id="atajos">
+            <h4><a href="../ECommerce/contacto.html">Contactenos!</a></h4>
+            <h4><a href="../ECommerce/nosotros.html">Preguntas?</a></h4>
+            <h4><a href="../ECommerce/alta.html">Agrega tus productos!</a></h4>
+        </div>
+        <div class="redes">
+            <h3>Visitanos en nuestras redes</h3>
+            <img src="../ECommerce/imgs/facebooklogo.png" alt="">
+            <img src="../ECommerce/imgs/intagramlogo.webp" alt="">
+            <img src="../ECommerce/imgs/Xlogo.avif" alt="">
+        </div>
+            <h3 id="copy">Copyright 2025</h3>
     </footer>
 
     <script src="js/productos.js"></script>
+    <script src="js/banner.js"></script>
     <script src="js/alta.js"></script>
     <script src="js/main.js"></script>
 

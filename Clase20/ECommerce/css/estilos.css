@@ -9,8 +9,9 @@
 
 body {
     margin: 0;
-    padding-top: 2vh;
-    background-image: linear-gradient(var(--color--primario), orange, brown)
+    padding: 0;
+    padding-top: 1vh;
+    background-image: linear-gradient(var(--color--primario), orange, var(--color--primario))
 }
 
 
@@ -20,12 +21,13 @@ header {
 }
 
 
-header nav {
+header #headernav {
     background-color: transparent;
-    width: 80%;
-    margin-left: 10%;
+    margin: auto;
     height: auto;
+    box-shadow: 3px 3px 3px;
     font-family: fuente-index;
+    text-shadow: 1px 1px 1px white;
 
     display: flex;
     align-items: center;
@@ -37,8 +39,6 @@ header nav ul {
    height: auto;
 
    list-style: none;
-   padding: 0;
-
    display: flex;
 }
 
@@ -52,29 +52,26 @@ header nav ul li a {
     letter-spacing: 5px;
     text-transform: uppercase;
     border-radius: 5%;
-    width: 200px;
+    width: auto;
     height: 54px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     color: black;
     margin: auto;
-
-    text-align: center;
-    line-height: 54px;
 }
 
 header nav ul li a:hover{
     font-size: 17px;
-    box-shadow: 20px 20px 7px var(--color--sombra);
-    transform: scaleX(1.3);
+    transform: scale(1.2);
     transition-duration: 0.3s;
 }
 
 /* ----------------------------------- */
 header #imagenlogo {
     background-color: transparent;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -86,7 +83,7 @@ header #imagenlogo {
     width: 60px;
     box-shadow: none;
     display: flex;
-    justify-content: start;
+    justify-content: center;
 }
 
 #imagenlogo a img{
@@ -99,7 +96,7 @@ header #imagenlogo {
 }
 
 #barra{
-    margin-top: 5vh;
+    margin-top: 1vh;
     display: flex;
     justify-content: center;
 }
@@ -246,15 +243,76 @@ header #imagenlogo {
     cursor: pointer;
 }
 
+/* Fin Slider section */
+
+
+/* Footer section */
+
+footer .redes{
+    height: 55px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer .redes h3{
+    font-family: fuente-index;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+    margin-left: 2%;
+    padding: 10px;
+}
+
+footer .redes img{
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer #atajos{
+    background-color: brown;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+footer #atajos h4{
+    width: 50%;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer #atajos h4 a{
+    color: black;
+    text-decoration: none;
+}
+
+footer #copy{
+    background-color: var(--color--primario);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+
+
+
+/* End Footer section */
 
 /* Fin Slider section */
 
 
 
 footer {
-    background-color:blueviolet;
+    background-color: transparent;
     color: white;
-    height: 100px;
+    height: 150px;
     text-align: center;
     line-height: 100px;
     font-size: 22px;
@@ -355,7 +413,7 @@ header nav ul li a:hover{
 }
 
     #barra{
-    margin-top: 5vh;
+    margin-top: 1vh;
     display: flex;
     justify-content: center;
     }
@@ -463,7 +521,7 @@ header nav ul li a:hover{
     grid-template-columns: auto;
 }
 #barra{
-    margin-top: 5vh;
+    margin-top: 1vh;
     padding: 5%;
     width: 100%;
     display: flex;
@@ -504,10 +562,8 @@ header nav ul li a:hover{
     display: none;
 }
 .cajabanner {
-    display: none;
+    overflow: auto;
 }
 
-#botonesbanner{
-    display: none;
-}
+
 }

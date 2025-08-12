@@ -8,29 +8,27 @@
     <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    
-    <header>
-        <nav>
+<header>
+        <div id="imagenlogo"><a href="./index.html"><img src="imgs/shopping-bag-logo-icon-design-template-isolated-vector.jpg" alt=""></a></div>
+        <nav id="headernav">
             <ul> 
-                <li id="imagenlogo"><a href=""><img src="imgs/shopping-bag-logo-icon-design-template-isolated-vector.jpg" alt=""></a></li>
                 <li> <a href="./index.html">Inicio</a> </li>
                 <li> <a href="./alta.html">Alta</a> </li>
                 <li> <a href="./carrito.html">Carrito</a> </li>
                 <li> <a href="./contacto.html">Contacto</a> </li>
                 <li> <a href="./nosotros.html">Nosotros</a> </li>
-                <li> <a href="./otra.html">Otra</a> </li>
             </ul>
         </nav>
         <div id="barra">
             <div id="barra-busqueda">
                 <form id="busqueda" action="#">
                     <label for="buscar"><img src="imgs/buscarLogo.png" alt=""></label>
-                    <input type="text" placeholder="Busca productos, marcas y mas...">
+                    <input type="text" id="buscar" placeholder="Busca productos, marcas y mas..." name="buscar">
                     <input type="submit" value="Buscar">
                 </form>
             </div>
             <div id="boton-carrito">
-                <a href="">
+                <a href="./carrito.html">
                     <img id="logo-carrito" src="imgs/carrito-de-compras.png" alt="">
                     <div></div>
                 </a>
@@ -60,14 +58,57 @@
 
     <main>
         <h1>Formulario de Contacto</h1>
+        <div id="formulario">
+            <form action="https://postman-echo.com/post" method="post">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" required name="name" autofocus>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>                    
+                    <input type="text" id="apellido" required name="apellido">  
+                </div>
+                <div>
+                    <label for="direccion">Dirección</label>                    
+                    <input type="text" id="direccion" name="direccion"> 
+                </div>
+                <div>
+                    <label for="email">E-mail</label>                    
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>                    
+                    <input type="text" id="telefono" name="telefono" required> 
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios</label>                    
+                    <textarea name="comentarios" id="comentarios" placeholder="Escribanos un breve comentario..."></textarea>
+                </div>                                                            
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
-        <h3>Copyright 2025</h3>
+        <div id="atajos">
+            <h4><a href="../ECommerce/contacto.html">Contactenos!</a></h4>
+            <h4><a href="../ECommerce/nosotros.html">Preguntas?</a></h4>
+            <h4><a href="../ECommerce/alta.html">Agrega tus productos!</a></h4>
+        </div>
+        <div class="redes">
+            <h3>Visitanos en nuestras redes</h3>
+            <img src="../ECommerce/imgs/facebooklogo.png" alt="">
+            <img src="../ECommerce/imgs/intagramlogo.webp" alt="">
+            <img src="../ECommerce/imgs/Xlogo.avif" alt="">
+        </div>
+            <h3 id="copy">Copyright 2025</h3>
     </footer>
 
     <script src="js/contacto.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/banner.js"></script>
 
 </body>
 </html>

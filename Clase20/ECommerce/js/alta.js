@@ -1,11 +1,3 @@
-// -------------------------------------
-//         variables globales
-// -------------------------------------
-
-
-// -------------------------------------
-//         funciones globales
-// -------------------------------------
 function agregar(e) {
     e.preventDefault()
 
@@ -15,7 +7,7 @@ function agregar(e) {
     const refPrecio = document.querySelector('#precio')
     const refStock = document.querySelector('#stock')
     const refMarca = document.querySelector('#marca')
-    const refCategoria = document.querySelector('#categoria')
+    const refCategoria = cambiarCategoria();
     const refDetalles = document.querySelector('#detalles')
     const refFoto = document.querySelector('#foto')
     const refEnvio = document.querySelector('#envio')
@@ -24,25 +16,25 @@ function agregar(e) {
     const precio = refPrecio.value
     const stock = refStock.value
     const marca = refMarca.value
-    const categoria = refCategoria.value
+    const categoria = refCategoria
     const detalles = refDetalles.value
     const foto = refFoto.value
     const envio = refEnvio.checked
+    
 
     const producto = {
-        nombre: nombre,
-        precio: +precio,
-        stock: parseInt(stock),
-        marca: marca,
-        categoria: categoria,
-        detalles: detalles,
-        foto: foto,
-        envio: envio,
+    nombre: nombre,
+    precio: +precio,
+    stock: parseInt(stock),
+    marca: marca,
+    categoria: categoria,
+    detalles: detalles,
+    foto: foto,
+    envio: envio,
     }
+    
 
-    console.log(producto)
     productos.push(producto)
-
     representarTablaProductos()
 
     // borro los campos de entrada del formulario
@@ -54,7 +46,15 @@ function agregar(e) {
     refDetalles.value = ''
     refFoto.value = ''
     refEnvio.checked = false
+
 }
+
+function cambiarCategoria(){
+    const select = document.getElementById('categorias');
+    const categoriaSeleccionada = select.value;
+    return categoriaSeleccionada
+}
+
 
 function representarTablaProductos() {
     let filasTabla = ''
